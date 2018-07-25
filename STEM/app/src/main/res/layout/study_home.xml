@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.androidprograming.martin.stem.StudyHome"
+    android:background="#444343">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="STUDY"
+        android:id="@+id/textView3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:textSize="85dp"
+        android:textColor="#0e09a6" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_below="@+id/textView3"
+        android:layout_alignEnd="@+id/textView3"
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULUS"
+            android:id="@+id/btnCalculusHome"
+            android:layout_gravity="center_horizontal"
+            android:background="#fa7211"
+            android:textColor="#ffffff"
+            android:textSize="17dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PHYSICS"
+            android:id="@+id/btnPhysicsHome"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:background="#d1d101"
+            android:textSize="17dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DISCRETE"
+            android:id="@+id/btnDiscreteHome"
+            android:layout_gravity="center_horizontal"
+            android:textSize="17dp"
+            android:textColor="#ffffff"
+            android:background="#03bdd1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLAY"
+            android:id="@+id/btnPlayStudy"
+            android:layout_gravity="center_horizontal"
+            android:background="#9d0404"
+            android:textSize="17dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:id="@+id/btnHomeStudy"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:background="#119f07" />
+    </LinearLayout>
+
+</RelativeLayout>
