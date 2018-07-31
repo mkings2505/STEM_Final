@@ -17,7 +17,12 @@
         </activity>
         <activity android:name=".PlayHome" />
         <activity android:name=".StudyHome" />
-        <activity android:name=".Calculus"></activity>
+        <activity android:name=".Calculus" />
+        <activity android:name=".GameStart" />
+        <activity android:name=".CantGame" />
+        <activity android:name=".CalcLessonOne" />
+        <activity android:name=".CalcLessonOneWrong" />
+        <activity android:name=".CalcLessonOneCorrect"></activity>
     </application>
 
 </manifest>

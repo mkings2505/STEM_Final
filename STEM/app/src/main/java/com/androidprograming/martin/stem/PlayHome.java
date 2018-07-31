@@ -7,8 +7,11 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
+
+
 public class PlayHome extends AppCompatActivity {
 
+    static int points = 10;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,5 +37,29 @@ public class PlayHome extends AppCompatActivity {
             }
 
         });
+        //int points = 10;
+        if (points >= 20) {
+
+            Button toGameStart = (Button) findViewById(R.id.btnStartGame);
+            toGameStart.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(PlayHome.this, GameStart.class);
+                    startActivity(intent);
+                }
+
+            });
+        }
+        else if (points < 20) {
+            Button toCantGame = (Button) findViewById(R.id.btnStartGame);
+            toCantGame.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(PlayHome.this, CantGame.class);
+                    startActivity(intent);
+                }
+
+            });
+        }
     }
 }
