@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
-
+import android.widget.TextView;
 
 
 public class PlayHome extends AppCompatActivity {
@@ -17,6 +17,9 @@ public class PlayHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.play_home);
+
+        final TextView textViewPoints = (TextView) this.findViewById(R.id.txtViewPoint);
+        textViewPoints.setText(String.valueOf(points));
 
         Button toHome = (Button) findViewById(R.id.btnHomePlay);
         toHome.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +40,7 @@ public class PlayHome extends AppCompatActivity {
             }
 
         });
-        //int points = 10;
+
         if (points >= 20) {
 
             Button toGameStart = (Button) findViewById(R.id.btnStartGame);
@@ -46,6 +49,7 @@ public class PlayHome extends AppCompatActivity {
                 public void onClick(View view) {
                     Intent intent = new Intent(PlayHome.this, GameStart.class);
                     startActivity(intent);
+                    points -= 20;
                 }
 
             });
@@ -57,6 +61,7 @@ public class PlayHome extends AppCompatActivity {
                 public void onClick(View view) {
                     Intent intent = new Intent(PlayHome.this, CantGame.class);
                     startActivity(intent);
+
                 }
 
             });

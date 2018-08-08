@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_stem"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
@@ -22,7 +22,14 @@
         <activity android:name=".CantGame" />
         <activity android:name=".CalcLessonOne" />
         <activity android:name=".CalcLessonOneWrong" />
-        <activity android:name=".CalcLessonOneCorrect"></activity>
+        <activity android:name=".CalcLessonOneCorrect" />
+        <activity android:name=".GameQOne" />
+        <activity android:name=".GameQTwo" />
+        <activity android:name=".GameQThree" />
+        <activity android:name=".GameQFour" />
+        <activity android:name=".GameQFive" />
+        <activity android:name=".RevealDay" />
+        <activity android:name=".GameQuesTwo"></activity>
     </application>
 
 </manifest>

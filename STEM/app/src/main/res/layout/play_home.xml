@@ -54,4 +54,23 @@
         android:layout_marginTop="60dp"
         android:textSize="40dp"
         android:background="#fb5e03" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:id="@+id/txtViewPoint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Points: "
+        android:id="@+id/textView48"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/txtViewPoint"
+        android:textColor="#ffffff" />
 </RelativeLayout>

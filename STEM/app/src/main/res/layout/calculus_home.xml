@@ -44,6 +44,22 @@
             android:id="@+id/btnCalcOne"
             android:background="#00ffffff"
             android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson 2"
+            android:id="@+id/button"
+            android:background="#00ffffff"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson 3"
+            android:id="@+id/button2"
+            android:layout_marginTop="15dp"
+            android:background="#00ffffff" />
     </LinearLayout>
 
     <LinearLayout
@@ -61,5 +77,40 @@
             android:id="@+id/textView8"
             android:textSize="25dp"
             android:textColor="#000000" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson 1"
+            android:id="@+id/button3"
+            android:background="#00ffffff"
+            android:layout_marginTop="15dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson 2"
+            android:id="@+id/button4"
+            android:layout_marginTop="15dp"
+            android:background="#00ffffff" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lesson 3"
+            android:id="@+id/button5"
+            android:background="#00ffffff"
+            android:layout_marginTop="15dp" />
     </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:id="@+id/btnCalculusStudyHome"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="#0e09a6" />
 </RelativeLayout>

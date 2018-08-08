@@ -17,6 +17,27 @@
         android:id="@+id/textView10"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="58dp"
-        android:text="WRONG" />
+        android:layout_marginTop="64dp"
+        android:text="CORRECT" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="YOU HAVE EARNED 10 POINTS!"
+        android:id="@+id/textView46"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home-W"
+        android:id="@+id/btnWrongStudyHome"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="#0e09a6" />
 </RelativeLayout>

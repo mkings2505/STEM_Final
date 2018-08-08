@@ -7,18 +7,17 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.androidprograming.martin.stem.GameStart"
+    tools:context="com.androidprograming.martin.stem.GameQFour"
     android:background="#9d0404">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="In this game you will"
-        android:id="@+id/textView4"
+        android:text="And these days?"
+        android:id="@+id/textView33"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="99dp"
+        android:layout_alignParentStart="true"
         android:textColor="#ffffff"
         android:textSize="30dp" />
 
@@ -26,47 +25,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="answer a series of"
-        android:id="@+id/textView12"
+        android:text="8, 9, 10, 11"
+        android:id="@+id/textView34"
+        android:layout_below="@+id/textView33"
+        android:layout_centerHorizontal="true"
         android:textSize="30dp"
         android:textColor="#ffffff"
-        android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp" />
+        android:layout_marginTop="30dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="questions."
-        android:id="@+id/textView13"
-        android:textColor="#ffffff"
-        android:textSize="30dp"
-        android:layout_below="@+id/textView12"
+        android:text="12, 13, 14, 15"
+        android:id="@+id/textView35"
+        android:layout_below="@+id/textView34"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="15dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="I will guess the day"
-        android:id="@+id/textView14"
-        android:layout_below="@+id/textView13"
-        android:layout_centerHorizontal="true"
-        android:textSize="30dp"
-        android:textColor="#ffffff"
-        android:layout_marginTop="45dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="of the month of your"
-        android:id="@+id/textView15"
-        android:layout_below="@+id/textView14"
-        android:layout_alignEnd="@+id/textView14"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:textColor="#ffffff"
         android:textSize="30dp" />
 
@@ -74,22 +49,45 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="birthday."
-        android:id="@+id/textView16"
-        android:textColor="#ffffff"
+        android:text="24, 25, 26, 27"
+        android:id="@+id/textView36"
+        android:layout_below="@+id/textView35"
+        android:layout_centerHorizontal="true"
         android:textSize="30dp"
-        android:layout_below="@+id/textView15"
-        android:layout_alignStart="@+id/textView13"
-        android:layout_marginTop="15dp" />
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="28, 29, 30, 31"
+        android:id="@+id/textView37"
+        android:layout_below="@+id/textView36"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffff"
+        android:textSize="30dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="NEXT"
-        android:id="@+id/btnGameStartNext"
+        android:text="No"
+        android:id="@+id/btnQFourNo"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:background="#0e09a6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/btnQFourYes"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:textSize="20dp"
         android:textColor="#ffffff"
-        android:background="#0e09a6" />
+        android:textSize="25dp"
+        android:background="#0e0986" />
 </RelativeLayout>

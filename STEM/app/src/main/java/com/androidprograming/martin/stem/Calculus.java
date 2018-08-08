@@ -21,5 +21,16 @@ public class Calculus extends AppCompatActivity {
                startActivity(intent);
            }
         });
+
+
+        Button toStudyHome = (Button) findViewById(R.id.btnCalculusStudyHome);
+        toStudyHome.setOnClickListener(new View.OnClickListener() {
+           @Override
+            public void onClick(View view) {
+               Intent intent = new Intent(Calculus.this, StudyHome.class);
+               startActivity(intent);
+           }
+        });
+
     }
 }

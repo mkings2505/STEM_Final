@@ -16,7 +16,7 @@ public class CalcLessonOne extends AppCompatActivity {
 
         EditText calcQOneAns = (EditText) findViewById(R.id.txtCalcQOneAns);
         String answer = calcQOneAns.getText().toString();
-        if (answer.equalsIgnoreCase("6x")) {
+        if (answer.toString() == "6x") {
             Button toCorrect = (Button) findViewById(R.id.btnSubmitCalcOne);
             toCorrect.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -25,10 +25,10 @@ public class CalcLessonOne extends AppCompatActivity {
                     startActivity(intent);
                     PlayHome.points += 10;
                 }
-                //PlayHome.points += 10;
+
             });
         }
-        else {
+        if (answer.toString() != "6x") {
             Button toWrong = (Button) findViewById(R.id.btnSubmitCalcOne);
             toWrong.setOnClickListener(new View.OnClickListener() {
                 @Override
