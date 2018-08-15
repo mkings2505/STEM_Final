@@ -20,8 +20,8 @@ public class RevealDay extends AppCompatActivity {
         reveal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               Intent intent = new Intent(RevealDay.this, RevealDay.class);
-               startActivity(intent);
+              // Intent intent = new Intent(RevealDay.this, RevealDay.class);
+               //startActivity(intent);
                 textViewDay.setText(String.valueOf(GameStart.day));
             }
 
@@ -33,6 +33,7 @@ public class RevealDay extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(RevealDay.this, Home.class);
                 startActivity(intent);
+                GameStart.day = 0;
             }
 
         });
